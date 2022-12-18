@@ -55,8 +55,21 @@ it captures the semantic meaning of words.
 2. It is a family of model architectures and optimizations
 that can be used to learn word embeddings from large datasets.
 2.1 Model Architectures
-1. Continous bag-of-words (CBOW)
+2.1.2. Continous bag-of-words (CBOW)
 Predicts the center word given the surrouding context words 
-2. Skip-gram
+2.1.2. Skip-gram
 Predicts the surrouding context words given the center word.
 
+Input -> Embedding Matrix -> Hidden Layer -> Softmax -> Output Layer vs Actual Result
+
+Input * Embedding Matrix = Embedded Vector
+One-hot Encoding * word2vec = Embedded Vector
+x(1*v) * E(v*d) = x(1*d)
+
+Hidden Layer = SUM(Embedded Vector)
+H(1*d) = x1(1*d) + x2(1*d) + ... xn(1*d)
+
+Output Layer = Hidden Layer * Softmax Function
+y(1*v) = H(1*d) * E'(d*v)
+
+Actual Result = Y(1*v)
