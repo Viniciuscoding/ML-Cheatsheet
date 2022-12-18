@@ -62,14 +62,14 @@ Predicts the surrouding context words given the center word.
 
 Input -> Embedding Matrix -> Hidden Layer -> Softmax -> Output Layer vs Actual Result
 
-Input * Embedding Matrix = Embedded Vector
-One-hot Encoding * word2vec = Embedded Vector
-x(1*v) * E(v*d) = x(1*d)
+Input x Embedding Matrix = Embedded Vector
+One-hot Encoding x word2vec = Embedded Vector
+x(1*v) x E(v*d) = x(1*d)
 
 Hidden Layer = SUM(Embedded Vector)
 H(1*d) = x1(1*d) + x2(1*d) + ... xn(1*d)
 
-Output Layer = Hidden Layer * Softmax Function
-y(1*v) = H(1*d) * E'(d*v)
+Output Layer = Hidden Layer x Softmax Function
+y(1*v) = H(1*d) x E'(d*v)
 
 Actual Result = Y(1*v)
