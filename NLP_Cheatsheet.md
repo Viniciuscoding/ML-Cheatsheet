@@ -31,3 +31,20 @@
 ## Two Major Problems from bith models
 1. High-dimension and sparce vectors.
 2. Lack of relationship between words.
+
+
+## Word Embeddings
+It is a technic of distributive representation. In other words,
+it captures the semantic meaning of words.
+
+### Types of Word Embeddings:
+1. Word2Vec (Google)
+2. GloVe (Stanford)
+3. FastText (Facebook)
+
+### Pros
+1. Low-dimension and dense vectors.
+2. Captures the semantic meaning of words.
+3. Vectors are trained by neural networks rather than manual work.
+
+### Cons
