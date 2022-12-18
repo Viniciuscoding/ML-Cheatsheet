@@ -48,3 +48,15 @@ it captures the semantic meaning of words.
 3. Vectors are trained by neural networks rather than manual work.
 
 ### Cons
+
+
+### Word2Vec
+1. It is not a singular algorithm.
+2. It is a family of model architectures and optimizations
+that can be used to learn word embeddings from large datasets.
+2.1 Model Architectures
+1. Continous bag-of-words (CBOW)
+Predicts the center word given the surrouding context words 
+2. Skip-gram
+Predicts the surrouding context words given the center word.
+
