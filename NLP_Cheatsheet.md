@@ -74,3 +74,8 @@ Output Layer = Hidden Layer x Softmax Function
 y(1*v) = H(1*d) x E'(d*v)
 
 Actual Result = Y(1*v)
+
+### CBOW calculation
+
+### Skipgram calculation
+
