@@ -53,11 +53,11 @@ it captures the semantic meaning of words.
 ### Word2Vec
 1. It is not a singular algorithm.
 2. It is a family of model architectures and optimizations.
-that can be used to learn word embeddings from large datasets.
-2.1 Model Architectures
-2.1.2. Continous bag-of-words (CBOW)
-Predicts the center word given the surrouding context words.
-2.1.2. Skip-gram
+that can be used to learn word embeddings from large datasets.<br>
+2.1 Model Architectures<br>
+2.1.2. Continous bag-of-words (CBOW)<br>
+Predicts the center word given the surrouding context words.<br>
+2.1.2. Skip-gram<br>
 Predicts the surrouding context words given the center word.
 
 Input -> Embedding Matrix -> Hidden Layer -> Softmax -> Output Layer vs Actual Result
