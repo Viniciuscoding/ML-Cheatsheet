@@ -9,11 +9,11 @@
 ## One-hot Encoding
 
 ### Cons
-1. No relationship between words
+1. No relationship between words.
 2. Generates high-dimension and sparce vectors. This leads to overfitting.
 ### Pros
-1. Intuitive to understand
-2. Easy to implement
+1. Intuitive to understand.
+2. Easy to implement.
 
 ## Bag-of-words
 
@@ -52,11 +52,11 @@ it captures the semantic meaning of words.
 
 ### Word2Vec
 1. It is not a singular algorithm.
-2. It is a family of model architectures and optimizations
+2. It is a family of model architectures and optimizations.
 that can be used to learn word embeddings from large datasets.
 2.1 Model Architectures
 2.1.2. Continous bag-of-words (CBOW)
-Predicts the center word given the surrouding context words 
+Predicts the center word given the surrouding context words.
 2.1.2. Skip-gram
 Predicts the surrouding context words given the center word.
 
@@ -82,8 +82,52 @@ Actual Result = Y(1*v)
 
 ## Artificial Neural Network (ANN)
 
+Activation Functions -> Cost (Loss) Fucntions -> Gradient Descent -> Backpropagation -> Learning Rate -> Epochs
+
 ### What is an **Activation Function** used for?
 It is used to **prevent linearity**. It converts a linear network to a non-linear one.
 ### Types of Activation Functions
 **Rectified Linear Unit (ReLU)**
+if x < 0 then 0
+else x
+**Sigmoid**
+Transform all values between 0 and 1. Commonly used on binary-class classification and logistic regression models such as Email Spam detection.
+f(x) = 1 / (1 + e^(-x)) OR return 1/(1+e**-x)
+**Hyperbolic Tangent (tanh)**
+Transform all values between -1 and 1
+f(x) = (e^x - e^(-x))/e^x + e^(-x))
+**Softmax**
+Commonly used on multi-class classification models such as costumer ratings.
+fi(x) = e^x / ∑(J,j=1)e^(xj)) for i = 1,...,j
 
+## Cost functions or loss functions
+Quantifies the comparison between predicted results versus actual results
+
+### Cost (Loss) Function 
+**Cost Function**: Used to compute errors of the entire training dataset. 
+**Loss Function**: Used to compute errors of a single training dataset instance.
+### Mean Squared Error (MSE)
+Used for regression problems
+MSE = ∑(n,i=1)(Y`i - Yi)^2 / n
+Y`i = Predicted value | Yi = Actual value | n = Size of the training data
+### Cost functions for classification problems
+### Cross-entropy
+Calculates the differences between probability distributions.
+
+### Backpropagation
+Go back to adjust weights and paramaters in order to minimize the cost (loss) function.
+How to adjust the weights?
+### Gradient Descent
+The process of walking down the surface formed to the process of walking down surface formed
+by the cost function and finding the bottom.
+### Finding the bottom
+#### Which direction to take?
+The derivative decides the direction to take
+#### How large should the step be?
+The learning rate (step size) determines the learning speed. It is a hyperparameter set before training.
+1. If learning rate (step size) is too small it might take too long.
+2. If learning rate (step size) is too large you my might not converge to the lowest point because 
+it might bounce back and forth the same position or even outside the curve (overshoots).
+### How many iterations to find the bottom?
+How many iterations are needed for the cost function to hit the optimum (the bottom of its curve)?
+The number of iterations is commonly called **epoch**. It is a hyperparameter that is set until values can't go down anymore.
