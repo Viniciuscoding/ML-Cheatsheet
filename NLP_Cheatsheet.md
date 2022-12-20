@@ -88,13 +88,13 @@ Activation Functions -> Cost (Loss) Fucntions -> Gradient Descent -> Backpropaga
 It is used to **prevent linearity**. It converts a linear network to a non-linear one.
 ### Types of Activation Functions
 **Rectified Linear Unit (ReLU)**
-`return if x < 0 then 0 else x`
+`return if x < 0 then 0 else x`<br>
 **Sigmoid**
 Transform all values between 0 and 1. Commonly used on binary-class classification and logistic regression models such as Email Spam detection.<br>
-`f(x) = 1 / (1 + e^(-x))` OR return 1/(1+e**-x)
+`f(x) = 1 / (1 + e^(-x))` OR return 1/(1+e**-x)<br>
 **Hyperbolic Tangent (tanh)**
 Transform all values between -1 and 1<br>
-`f(x) = (e^x - e^(-x))/e^x + e^(-x))`
+`f(x) = (e^x - e^(-x))/e^x + e^(-x))`<br>
 **Softmax**
 Commonly used on multi-class classification models such as costumer ratings.<br>
 `fi(x) = e^x / ∑(J,j=1)e^(xj)) for i = 1,...,j`
