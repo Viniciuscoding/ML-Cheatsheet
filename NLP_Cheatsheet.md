@@ -77,5 +77,13 @@ Actual Result = Y(1*v)
 
 ### CBOW calculation
 
-### Skipgram calculation
+### Skip-gram calculation
+
+
+## Artificial Neural Network (ANN)
+
+### What is an **Activation Function** used for?
+It is used to **prevent linearity**. It converts a linear network to a non-linear one.
+### Types of Activation Functions
+**Rectified Linear Unit (ReLU)**
 
