@@ -92,13 +92,13 @@ if x < 0 then 0
 else x
 **Sigmoid**
 Transform all values between 0 and 1. Commonly used on binary-class classification and logistic regression models such as Email Spam detection.
-f(x) = 1 / (1 + e^(-x)) OR return 1/(1+e**-x)
+`f(x) = 1 / (1 + e^(-x))` OR return 1/(1+e**-x)
 **Hyperbolic Tangent (tanh)**
 Transform all values between -1 and 1
-f(x) = (e^x - e^(-x))/e^x + e^(-x))
+`f(x) = (e^x - e^(-x))/e^x + e^(-x))`
 **Softmax**
 Commonly used on multi-class classification models such as costumer ratings.
-fi(x) = e^x / ∑(J,j=1)e^(xj)) for i = 1,...,j
+`fi(x) = e^x / ∑(J,j=1)e^(xj)) for i = 1,...,j`
 
 ## Cost functions or loss functions
 Quantifies the comparison between predicted results versus actual results
@@ -108,8 +108,8 @@ Quantifies the comparison between predicted results versus actual results
 **Loss Function**: Used to compute errors of a single training dataset instance.
 ### Mean Squared Error (MSE)
 Used for regression problems
-MSE = ∑(n,i=1)(Y`i - Yi)^2 / n
-Y`i = Predicted value | Yi = Actual value | n = Size of the training data
+`MSE = ∑(n,i=1)(Y'i - Yi)^2 / n`
+`Y'i = Predicted value | Yi = Actual value | n = Size of the training data`
 ### Cost functions for classification problems
 ### Cross-entropy
 Calculates the differences between probability distributions.
