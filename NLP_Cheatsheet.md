@@ -164,7 +164,7 @@ Section 2: **Input Gate** decides what new information should be remembered.<br>
 Section 3: **Output Gate** decides what information should pass to the next time step.<br>
 
 # Gated Recurrent Unit (GRU)
-It is similar to LSTM but the mojor difference is that GRU merges the pipeline cell state and hidden state. In other words is is like merging the short-term memory with the long-term memory.
+It is similar to LSTM but the mojor difference is that GRU merges the pipeline cell state and hidden state. In other words is like merging the short-term memory with the long-term memory.
 
 ## GRU Gates
 GRU has two major gates: **Reset Gate** and **Update Gate**
