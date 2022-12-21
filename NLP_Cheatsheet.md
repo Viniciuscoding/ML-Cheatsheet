@@ -151,12 +151,12 @@ Or, using **Long Short-Term Memory (LSTM)**
 1.1. Shot-term memory pipeline.
 
 ### LSTM
-1. Two pipelines.
-1.1. Short-term memory pipeline = hidden layer. Output layer is called hidden state.
-1.2. Long-term memory pipeline = cell layer. Output layer is called cell state.
-2. It has **Gates**.
-2.1. A Gate has a **Pointwise multiplication functions** and a **Sigmoid function**.
-2.2. In a Sigmoid function: 0 = forget information & 1 = remember information.
+1. Two pipelines.<br>
+1.1. Short-term memory pipeline = hidden layer. Output layer is called hidden state.<br>
+1.2. Long-term memory pipeline = cell layer. Output layer is called cell state.<br>
+2. It has **Gates**.<br>
+2.1. A Gate has a **Pointwise multiplication functions** and a **Sigmoid function**.<br>
+2.2. In a Sigmoid function: 0 = forget information & 1 = remember information.<br>
 
 NOTE: Gates in LSTM are divided in three sections:<br>
 Section 1: **Forget Gate** decides what irrelevant information to forget.<br>
