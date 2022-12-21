@@ -130,3 +130,16 @@ it might bounce back and forth the same position or even outside the curve (over
 ### How many iterations to find the bottom?
 How many iterations are needed for the cost function to hit the optimum (the bottom of its curve)?
 The number of iterations is commonly called **epoch**. It is a hyperparameter that is set until values can't go down anymore.
+
+
+# Recursive Neural Networks (RNN)
+
+## PROS
+1. It has a memory.
+## CONS
+1. It has a short-term memory.
+## Vanishing Gradients
+It is when the gradients of the paraementers with respect to the loss function are so small that it becomes difficult for the netwrok to learn.
+### Colution?
+It can be mitigated by using non-saturation behavior activation function such as **ReLu**, **Batch Normalization**, and **Residual Connections**.<br>
+Or, using **Long Short-Term Memory (LSTM)**
