@@ -140,6 +140,36 @@ The number of iterations is commonly called **epoch**. It is a hyperparameter th
 1. It has a short-term memory.
 ## Vanishing Gradients
 It is when the gradients of the paraementers with respect to the loss function are so small that it becomes difficult for the netwrok to learn.
-### Colution?
+### Solution?
 It can be mitigated by using non-saturation behavior activation function such as **ReLu**, **Batch Normalization**, and **Residual Connections**.<br>
 Or, using **Long Short-Term Memory (LSTM)**
+
+# Long Short-Term Memory (LSTM)
+## RNN vs LSTM
+### RNN
+1. One pipeline.
+1.1. Shot-term memory pipeline.
+
+### LSTM
+1. Two pipelines.
+1.1. Short-term memory pipeline = hidden layer. Output layer is called hidden state.
+1.2. Long-term memory pipeline = cell layer. Output layer is called cell state.
+2. It has **Gates**.
+2.1. A Gate has a **Pointwise multiplication functions** and a **Sigmoid function**.
+2.2. In a Sigmoid function: 0 = forget information & 1 = remember information.
+
+NOTE: Gates in LSTM are divided in three sections:<br>
+Section 1: **Forget Gate** decides what irrelevant information to forget.<br>
+Section 2: **Input Gate** decides what new information should be remembered.<br>
+Section 3: **Output Gate** decides what information should pass to the next time step.<br>
+
+# Gated Recurrent Unit (GRU)
+It is similar to LSTM but the mojor difference is that GRU merges the pipeline cell state and hidden state. In other words is is like merging the short-term memory with the long-term memory.
+
+## GRU Gates
+GRU has two major gates: **Reset Gate** and **Update Gate**
+### Reset Gate
+It determines how much information from the past should be carried on to the future.
+### Update Gate
+It combines the forget and input gates in an LSTM into a single "update gate" to decide how much information should be forgotten and remembered.
+
