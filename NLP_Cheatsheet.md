@@ -1,4 +1,4 @@
-
+# NLP Models
 
 # Basic Vectorization
 
@@ -183,3 +183,13 @@ It combines the forget and input gates in an LSTM into a single "update gate" to
 It is widely used in computer vision tasks such as image processing, classification, and segmentation.<br>
 Produces good results specially for relatively short-length sentences.
 
+
+
+# Advanced NLP Models
+
+## Encoder-Decoder
+
+### Encoder
+It is a network that can be built using unrolled recurrent neural network such as RNN, LSTM and GRU.
+
+### Decoder
