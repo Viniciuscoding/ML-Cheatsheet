@@ -131,6 +131,9 @@ it might bounce back and forth the same position or even outside the curve (over
 How many iterations are needed for the cost function to hit the optimum (the bottom of its curve)?
 The number of iterations is commonly called **epoch**. It is a hyperparameter that is set until values can't go down anymore.
 
+# Deep Neural Networks (DNN)
+It is a neural network with multiple hidden layers.
+
 
 # Recursive Neural Networks (RNN)
 
@@ -145,6 +148,8 @@ It can be mitigated by using non-saturation behavior activation function such as
 Or, using **Long Short-Term Memory (LSTM)**
 
 # Long Short-Term Memory (LSTM)
+It is a neural network with long-term memory.
+
 ## RNN vs LSTM
 ### RNN
 1. One pipeline.
@@ -167,7 +172,8 @@ Section 3: **Output Gate** decides what information should pass to the next time
 It is similar to LSTM but the mojor difference is that GRU merges the pipeline cell state and hidden state. In other words is like merging the short-term memory with the long-term memory.
 
 ## GRU Gates
-GRU has two major gates: **Reset Gate** and **Update Gate**
+It is an improved and simplified variant of LSTM.<br>
+GRU has two major gates: **Reset Gate** and **Update Gate**.
 ### Reset Gate
 It determines how much information from the past should be carried on to the future.
 ### Update Gate
