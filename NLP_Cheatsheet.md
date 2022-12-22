@@ -173,3 +173,7 @@ It determines how much information from the past should be carried on to the fut
 ### Update Gate
 It combines the forget and input gates in an LSTM into a single "update gate" to decide how much information should be forgotten and remembered.
 
+# Convolution Neural Network (CNN)
+It is widely used in computer vision tasks such as image processing, classification, and segmentation.<br>
+Produces good results specially for relatively short-length sentences.
+
