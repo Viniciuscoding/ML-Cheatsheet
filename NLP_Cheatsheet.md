@@ -193,3 +193,106 @@ Produces good results specially for relatively short-length sentences.
 It is a network that can be built using unrolled recurrent neural network such as RNN, LSTM and GRU.
 
 ### Decoder
+
+
+# Attention
+
+
+# Transformer
+
+## Multi-Headed Attention
+
+### Encoders
+Identical in structures: 6 Enconders<br>
+Different in weights
+
+### Encoder 2 Self-Layers
+Self Attention<br>
+Feedforward Neural Network
+
+### Decoders
+
+### Decoder 3 Self-Layers
+Self Attention<br>
+Encoder-Decoder Attention<br>
+-- Focus on relevant parts of the input sentence
+Feedforward Neural Network
+
+Input -> Positional Encoding -> Embedding -> Query Vector | Key Vector | Value Vector<br> -> Self Attention Output -> Feedforward
+
+Layers = 6<br>
+Embedding Dimensionality = 512<br>
+Econder Input/Output Dimensionality = 512<br>
+Query Dimensionality = 64<br>
+Key Dimensionality = 64<br>
+Value Dimensionality = 64<br>
+Attention Heads = 8
+
+I + t -> x -> Q | K | V
+
+Q | K | V = x * Wq | x * Wk | x * Wv<br>
+Wq | Wk | Wv = Learned Query Weight | Learned Key Weight | Learned Value Weight
+
+Embedding x Learned Query Weight = Query Vector<br>
+Embedding x Learned Key Weight = Key Vector<br>
+Embedding x Learned Value Weight = Value Vector<br>
+
+
+softmax * (Q * K^t) / sqrt(dk)) * V = Z
+
+Q = Query vector
+K = Key vector
+Kt = Transposed K
+V = Value vector
+dk = Dimensionality of K
+Z = Self-attention output
+
+Self-attention output -> Feeforward Neural Network<br>
+Z -> F
+
+Z x F
+
+## Bidirectional Encoder Representations from Transformers (BERT)
+0. Created by Google in 2018
+1. Trained in two variations<br>
+1.1. BERT Base: 12 Transformers Stacks -> 110 million parameters<br>
+1.2. BERT Large: 24 Tranformers Stacks -> 340 million paramenters
+2. Able to handle long input context
+3. Trained on entire Wikipedia and BookCorpus
+4. Trained for 1 million steps
+5. Targeted at multi-task obejectives<br>
+5.1. This is because it was trained on two variations: Masked Language Modeling (MLM) and Next Sentence Prediction (NSP)
+6. Trained on TPU for 4 days
+7. Works at both sentence-level and token-level tasks
+8. Can be fine-tuned for many different tasks
+
+
+                     |BERT Base |BERT Large|Transformer|
+|Layers              |    12    |    24    |     6     |
+|FeedForward Networks|    768   |   1024   |    512    |
+|Attention Heads     |    12    |    16    |     8     |
+
+## BERT Input Embeddings
+1. Token Embedding
+2. Segment Embeddings
+3. Position Embeddings
+
+## BERT Usage
+1. Single Sentence Classification
+2. Sentence Pair Classification
+3. Question Answering
+4. Single Sentence Tagging Tasks
+
+
+# Large Language Models
+
+1. A single model can be used for different tasks
+2. The fine-tune process require minimal filed data<br>
+2.1. `few-shot` refers to training a model with minimal data<br>
+2.2. `zero-shot` implies that a model can recognize things that have not explicitly been taught<br>
+3. The performance is continuosly growing wiht more data and parameters
+
+
+
+
+
