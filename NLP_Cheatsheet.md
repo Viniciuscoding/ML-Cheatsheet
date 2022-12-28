@@ -238,14 +238,14 @@ Embedding x Learned Key Weight = Key Vector<br>
 Embedding x Learned Value Weight = Value Vector<br>
 
 
-softmax * (Q * K^t) / sqrt(dk)) * V = Z
+`softmax * (Q * K^t) / sqrt(dk)) * V = Z`
 
-Q = Query vector
-K = Key vector
-Kt = Transposed K
-V = Value vector
-dk = Dimensionality of K
-Z = Self-attention output
+Q = Query vector<br>
+K = Key vector<br>
+Kt = Transposed K<br>
+V = Value vector<br>
+dk = Dimensionality of K<br>
+Z = Self-attention output<br>
 
 Self-attention output -> Feeforward Neural Network<br>
 Z -> F
@@ -268,6 +268,7 @@ Z x F
 
 
                      |BERT Base |BERT Large|Transformer|
+|--------------------|----------|----------|-----------|                     
 |Layers              |    12    |    24    |     6     |
 |FeedForward Networks|    768   |   1024   |    512    |
 |Attention Heads     |    12    |    16    |     8     |
@@ -292,7 +293,16 @@ Z x F
 2.2. `zero-shot` implies that a model can recognize things that have not explicitly been taught<br>
 3. The performance is continuosly growing wiht more data and parameters
 
+## Pathways Language Model (PaLM)
 
-
+Outperformed few-shot performance of previous LM models in 28 out of 29 tasks.<br>
+`
+GLaM = 
+GPT-3 =
+Megatron Turing NLG =
+Gopher =
+Chinchilla = 
+LaMDA = 
+`
 
 
